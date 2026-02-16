@@ -1,0 +1,55 @@
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #f4efe6, #e8d5c3);
+  color: #5c3a21;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(200,120,50,0.15);
+}
+
+h1, h2 {
+  color: #b55a30;
+}
+
+nav {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #8b4513;
+  font-weight: bold;
+}
+
+.gallery-thumbnails, .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-thumbnails img, .gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #a0522d;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery-thumbnails img:hover, .gallery-grid img:hover {
+  transform: scale(1.05);
+  border-color: #5c2e1e;
+}
+
+.lightboxOverlay, .lightbox {
+  z-index: 1000;
+}
