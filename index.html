@@ -1,55 +1,70 @@
 
-body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #f4efe6, #e8d5c3);
-  color: #5c3a21;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Mural Business</title>
 
-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: rgba(200,120,50,0.15);
-}
+<link rel="stylesheet" href="style.css">
+<link href="lightbox2/css/lightbox.css" rel="stylesheet">
 
-h1, h2 {
-  color: #b55a30;
-}
+</head>
 
-nav {
-  text-align: center;
-  margin: 1rem 0;
-}
+<body>
 
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #8b4513;
-  font-weight: bold;
-}
+<header>
+    <img src="images/logo.png" alt="Business Logo" class="logo">
+    <h1>Your Mural Business</h1>
+    <p>Professional murals, window paintings, signage and custom illustrations.</p>
+</header>
 
-.gallery-thumbnails, .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+<nav>
+    <a href="galleries/murals.html">Murals</a>
+    <a href="galleries/windows.html">Window Paintings</a>
+    <a href="galleries/signs.html">Signs & Boards</a>
+    <a href="galleries/illustrations.html">Portraits & Illustrations</a>
+    <a href="pricing.html">Pricing</a>
+</nav>
 
-.gallery-thumbnails img, .gallery-grid img {
-  width: 100%;
-  height: auto;
-  border: 4px solid #a0522d;
-  transition: transform 0.3s, border-color 0.3s;
-}
+<section class="home-gallery">
+    <h2>Featured Work</h2>
+    <div class="gallery-grid">
 
-.gallery-thumbnails img:hover, .gallery-grid img:hover {
-  transform: scale(1.05);
-  border-color: #5c2e1e;
-}
+        <a href="galleries/murals.html">
+            <img src="images/murals/murals2kehoe's.jpg" alt="Murals">
+        </a>
 
-.lightboxOverlay, .lightbox {
-  z-index: 1000;
-}
+        <a href="galleries/windows.html">
+            <img src="images/windows/windows1paddys.jpg" alt="Window Paintings">
+        </a>
+
+        <a href="galleries/signs.html">
+            <img src="images/signs/signs1cocktails.jpg" alt="Signs & Boards">
+        </a>
+
+        <a href="galleries/illustrations.html">
+            <img src="images/illustrations/illustrations1beckhams.jpg" alt="Illustrations">
+        </a>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: 000 000 0000</p>
+    <p>
+        <a href="https://instagram.com/yourpage" target="_blank">Instagram</a> |
+        <a href="https://facebook.com/yourpage" target="_blank">Facebook</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Your Mural Business</p>
+</footer>
+
+<script src="lightbox2/js/lightbox.js"></script>
+
+</body>
+</html>
