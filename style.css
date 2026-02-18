@@ -53,3 +53,8 @@ nav a {
 .lightboxOverlay, .lightbox {
   z-index: 1000;
 }
+
+.hidden-slide {
+  display: none;
+}
+
