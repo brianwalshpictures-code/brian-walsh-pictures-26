@@ -58,3 +58,8 @@ nav a {
   display: none;
 }
 
+.gallery-grid a.hidden-slide {
+  display: none;
+}
+
+
