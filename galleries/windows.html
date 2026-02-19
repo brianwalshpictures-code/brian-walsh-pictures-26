@@ -1,51 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Window Paintings Gallery</title>
-<link href="../lightbox2/css/lightbox.css" rel="stylesheet">
+<title>Window Paintings</title>
+
 <link rel="stylesheet" href="../style.css">
+<link href="../lightbox2/css/lightbox.css" rel="stylesheet">
+
 </head>
 <body>
+
 <header>
   <h1>Window Paintings</h1>
   <a href="../index.html">Back to Home</a>
 </header>
 
 <section class="gallery-grid">
-  <a href="../images/windows1paddys.jpg" data-lightbox="windows1" data-title="St. Paddy's Window">
+
+  <a href="../images/windows1paddys.jpg" data-lightbox="windows1">
     <img src="../images/windows1paddys.jpg" alt="">
   </a>
 
-  <a href="../images/windows2christmasfawna.jpg" data-lightbox="windows2" data-title="Christmas Fawn">
+  <a href="../images/windows2christmasfawna.jpg" data-lightbox="windows2">
     <img src="../images/windows2christmasfawna.jpg" alt="">
   </a>
-  <a href="../images/windows2christmasfawnb.jpg" data-lightbox="windows2" data-title="Christmas Fawn">
-    <img src="../images/windows2christmasfawnb.jpg" alt="">
-  </a>
-  <a href="../images/windows2christmasfawnc.jpg" data-lightbox="windows2" data-title="Christmas Fawn">
-    <img src="../images/windows2christmasfawnc.jpg" alt="">
-  </a>
+  <a href="../images/windows2christmasfawnb.jpg" data-lightbox="windows2" class="hidden-slide"></a>
+  <a href="../images/windows2christmasfawnc.jpg" data-lightbox="windows2" class="hidden-slide"></a>
 
-  <a href="../images/windows3halloween.jpg" data-lightbox="windows3" data-title="Halloween Window">
+  <a href="../images/windows3halloween.jpg" data-lightbox="windows3">
     <img src="../images/windows3halloween.jpg" alt="">
   </a>
 
-  <a href="../images/windows5christmasbordera.jpg" data-lightbox="windows5" data-title="Christmas Border">
+  <a href="../images/windows5christmasbordera.jpg" data-lightbox="windows5">
     <img src="../images/windows5christmasbordera.jpg" alt="">
   </a>
-  <a href="../images/windows5christmasborderb.jpg" data-lightbox="windows5" data-title="Christmas Border">
-    <img src="../images/windows5christmasborderb.jpg" alt="">
-  </a>
+  <a href="../images/windows5christmasborderb.jpg" data-lightbox="windows5" class="hidden-slide"></a>
 
-  <a href="../images/windows6christmaself.jpg" data-lightbox="windows6" data-title="Christmas Elf Window">
+  <a href="../images/windows6christmaself.jpg" data-lightbox="windows6">
     <img src="../images/windows6christmaself.jpg" alt="">
   </a>
+
 </section>
 
 <script src="../lightbox2/js/lightbox.js"></script>
+<script>
+lightbox.option({
+  'wrapAround': true,
+  'alwaysShowNavOnTouchDevices': true
+});
+</script>
+
 </body>
 </html>
-
