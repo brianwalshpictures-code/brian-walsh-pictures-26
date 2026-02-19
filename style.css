@@ -63,5 +63,9 @@ nav a {
   left: -9999px;
 }
 
+.hidden-slide {
+  display: none !important;
+}
+
 
 
