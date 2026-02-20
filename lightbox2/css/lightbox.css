@@ -193,3 +193,12 @@ body.lb-disable-scrolling {
   cursor: pointer;
   opacity: 1;
 }
+
+/* Force Lightbox arrows to show */
+.lb-prev {
+    background: url("../img/prev.png") no-repeat;
+}
+
+.lb-next {
+    background: url("../img/next.png") no-repeat;
+}
