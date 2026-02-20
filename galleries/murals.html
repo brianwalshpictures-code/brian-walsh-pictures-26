@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,15 @@
 
 <link rel="stylesheet" href="../style.css">
 <link href="../lightbox2/css/lightbox.css" rel="stylesheet">
+
+<style>
+/* FORCE LIGHTBOX ARROWS TO SHOW */
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 1 !important;
+  display: block !important;
+}
+</style>
 
 </head>
 <body>
@@ -19,37 +27,31 @@
 
 <section class="gallery-grid">
 
-  <!-- Slideshow 1 -->
   <a href="../images/murals1leixlipa.jpg" data-lightbox="murals1">
     <img src="../images/murals1leixlipa.jpg" alt="">
   </a>
   <a href="../images/murals1leixlipb.jpg" data-lightbox="murals1" class="hidden-slide"></a>
 
-  <!-- Single -->
   <a href="../images/murals2kehoes.jpg" data-lightbox="murals2">
     <img src="../images/murals2kehoes.jpg" alt="">
   </a>
 
-  <!-- Slideshow 2 -->
   <a href="../images/murals3leixlipa.jpg" data-lightbox="murals3">
     <img src="../images/murals3leixlipa.jpg" alt="">
   </a>
   <a href="../images/murals3leixlipb.jpg" data-lightbox="murals3" class="hidden-slide"></a>
   <a href="../images/murals3leixlipc.jpg" data-lightbox="murals3" class="hidden-slide"></a>
 
-  <!-- Slideshow 3 -->
   <a href="../images/murals4piratesa.jpg" data-lightbox="murals4">
     <img src="../images/murals4piratesa.jpg" alt="">
   </a>
   <a href="../images/murals4piratesb.jpg" data-lightbox="murals4" class="hidden-slide"></a>
   <a href="../images/murals4piratesc.jpg" data-lightbox="murals4" class="hidden-slide"></a>
 
-  <!-- Single -->
   <a href="../images/murals5guinness.jpg" data-lightbox="murals5">
     <img src="../images/murals5guinness.jpg" alt="">
   </a>
 
-  <!-- Slideshow 4 -->
   <a href="../images/murals6carmela.jpg" data-lightbox="murals6">
     <img src="../images/murals6carmela.jpg" alt="">
   </a>
@@ -65,72 +67,17 @@
 
 </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../lightbox2/js/lightbox.js"></script>
+
 <script>
 lightbox.option({
   'wrapAround': true,
-  'alwaysShowNavOnTouchDevices': true
+  'alwaysShowNavOnTouchDevices': true,
+  'fadeDuration': 0,
+  'imageFadeDuration': 0
 });
 </script>
-<div id="manual-arrows">
-  <button id="arrow-prev">&#10094;</button>
-  <button id="arrow-next">&#10095;</button>
-</div>
 
-<style>
-#manual-arrows {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  pointer-events: none;
-  z-index: 9999;
-}
-
-#arrow-prev,
-#arrow-next {
-  pointer-events: auto;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  font-size: 40px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-
-  const prev = document.getElementById("arrow-prev");
-  const next = document.getElementById("arrow-next");
-
-  prev.addEventListener("click", function() {
-    if (typeof lightbox !== "undefined") {
-      lightbox.prev();
-    }
-  });
-
-  next.addEventListener("click", function() {
-    if (typeof lightbox !== "undefined") {
-      lightbox.next();
-    }
-  });
-
-});
-</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
