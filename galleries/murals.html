@@ -74,9 +74,59 @@ lightbox.option({
   'alwaysShowNavOnTouchDevices': true
 });
 </script>
+<div id="manual-arrows">
+  <button id="arrow-prev">&#10094;</button>
+  <button id="arrow-next">&#10095;</button>
+</div>
 
+<style>
+#manual-arrows {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#arrow-prev,
+#arrow-next {
+  pointer-events: auto;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const prev = document.getElementById("arrow-prev");
+  const next = document.getElementById("arrow-next");
+
+  prev.addEventListener("click", function() {
+    if (typeof lightbox !== "undefined") {
+      lightbox.prev();
+    }
+  });
+
+  next.addEventListener("click", function() {
+    if (typeof lightbox !== "undefined") {
+      lightbox.next();
+    }
+  });
+
+});
+</script>
 </body>
 </html>
+
 
 
 
