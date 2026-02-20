@@ -202,3 +202,14 @@ body.lb-disable-scrolling {
 .lb-next {
     background: url("../img/next.png") no-repeat;
 }
+
+/* Force Lightbox arrows to appear */
+.lb-prev {
+    display: block !important;
+    background: url("../img/prev.png") no-repeat center center !important;
+}
+
+.lb-next {
+    display: block !important;
+    background: url("../img/next.png") no-repeat center center !important;
+}
