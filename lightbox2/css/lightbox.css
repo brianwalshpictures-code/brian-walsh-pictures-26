@@ -213,3 +213,18 @@ body.lb-disable-scrolling {
     display: block !important;
     background: url("../img/next.png") no-repeat center center !important;
 }
+
+/* Arrows for Lightbox2 slideshow */
+.lb-prev {
+    display: block !important;
+    background: url("../img/prev.png") no-repeat center center !important;
+    width: 34px;
+    height: 34px;
+}
+
+.lb-next {
+    display: block !important;
+    background: url("../img/next.png") no-repeat center center !important;
+    width: 34px;
+    height: 34px;
+}
