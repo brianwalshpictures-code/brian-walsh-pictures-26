@@ -67,5 +67,31 @@ nav a {
   display: none !important;
 }
 
+/* Lightbox custom arrows */
+
+.lb-nav a.lb-prev::after,
+.lb-nav a.lb-next::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.lb-nav a.lb-prev:not([style*="display: none"])::after {
+  content: "‹";
+  left: 20px;
+}
+
+.lb-nav a.lb-next:not([style*="display: none"])::after {
+  content: "›";
+  right: 20px;
+}
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 1 !important;
+}
 
 
