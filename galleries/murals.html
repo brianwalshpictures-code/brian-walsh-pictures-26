@@ -9,6 +9,7 @@
 <link href="../lightbox2/css/lightbox.css" rel="stylesheet">
 
 <style>
+/* Only show arrows when there is a next OR previous image */
 .lb-nav a.lb-prev::after,
 .lb-nav a.lb-next::after {
   position: absolute;
@@ -19,12 +20,12 @@
   font-weight: bold;
 }
 
-.lb-nav a.lb-prev::after {
+.lb-nav a.lb-prev:not([style*="display: none"])::after {
   content: "‹";
   left: 20px;
 }
 
-.lb-nav a.lb-next::after {
+.lb-nav a.lb-next:not([style*="display: none"])::after {
   content: "›";
   right: 20px;
 }
@@ -32,7 +33,6 @@
 .lb-nav a.lb-prev,
 .lb-nav a.lb-next {
   opacity: 1 !important;
-  display: block !important;
 }
 </style>
 
@@ -100,5 +100,6 @@ lightbox.option({
 
 </body>
 </html>
+
 
 
