@@ -9,26 +9,30 @@
 <link href="../lightbox2/css/lightbox.css" rel="stylesheet">
 
 <style>
-.lb-nav {
-  opacity: 1 !important;
+.lb-nav a.lb-prev::after,
+.lb-nav a.lb-next::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.lb-nav a.lb-prev::after {
+  content: "‹";
+  left: 20px;
+}
+
+.lb-nav a.lb-next::after {
+  content: "›";
+  right: 20px;
 }
 
 .lb-nav a.lb-prev,
 .lb-nav a.lb-next {
   opacity: 1 !important;
   display: block !important;
-  width: 50% !important;
-  height: 100% !important;
-}
-
-.lb-nav a.lb-prev {
-  left: 0 !important;
-  background: rgba(0,0,0,0.3) !important;
-}
-
-.lb-nav a.lb-next {
-  right: 0 !important;
-  background: rgba(0,0,0,0.3) !important;
 }
 </style>
 
@@ -96,4 +100,5 @@ lightbox.option({
 
 </body>
 </html>
+
 
