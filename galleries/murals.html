@@ -9,11 +9,26 @@
 <link href="../lightbox2/css/lightbox.css" rel="stylesheet">
 
 <style>
-/* FORCE LIGHTBOX ARROWS TO SHOW */
+.lb-nav {
+  opacity: 1 !important;
+}
+
 .lb-nav a.lb-prev,
 .lb-nav a.lb-next {
   opacity: 1 !important;
   display: block !important;
+  width: 50% !important;
+  height: 100% !important;
+}
+
+.lb-nav a.lb-prev {
+  left: 0 !important;
+  background: rgba(0,0,0,0.3) !important;
+}
+
+.lb-nav a.lb-next {
+  right: 0 !important;
+  background: rgba(0,0,0,0.3) !important;
 }
 </style>
 
@@ -81,3 +96,4 @@ lightbox.option({
 
 </body>
 </html>
+
