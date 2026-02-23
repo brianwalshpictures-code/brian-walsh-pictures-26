@@ -186,3 +186,9 @@ nav a {
   font-style: italic;
   letter-spacing: 0.5px;
 }
+
+  
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+}
