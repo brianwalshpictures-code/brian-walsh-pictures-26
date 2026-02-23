@@ -143,20 +143,23 @@ nav a {
     text-align: center;
     margin-top: 10px;
   }
-}
 
-/* Gallery grid captions */
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
 .gallery-item {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 200px; /* Adjust as needed */
+}
+
+.gallery-item figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #8b4513;
+}
+
+.gallery-item {
+  text-align: center;
 }
 
 .gallery-item figcaption {
