@@ -167,3 +167,22 @@ nav a {
   font-size: 14px;
   color: #8b4513;
 }
+
+  /* Gallery captions styling */
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #444;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
