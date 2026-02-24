@@ -93,3 +93,19 @@ nav a {
   display: block;
 }
 
+/* Fix figure behaviour inside gallery grid */
+
+.gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery-item {
+  margin: 0;           /* remove default figure margin */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
