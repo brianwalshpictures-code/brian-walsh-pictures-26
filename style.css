@@ -171,4 +171,9 @@ nav a {
   margin:0;
 }
 
+/* Homepage thumbnails in one neat row */
+.gallery-grid {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 900px;
+}
 
