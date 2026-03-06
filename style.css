@@ -177,3 +177,80 @@ nav a {
   max-width: 900px;
 }
 
+/* ======================
+   Header: Logo & Title
+====================== */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  height: 140px; /* larger logo */
+  width: auto;
+}
+
+.header-center h1 {
+  font-family: "Georgia", "Times New Roman", serif; /* traditional bold font */
+  font-size: 64px; /* larger title */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ======================
+   Homepage Gallery Grid
+====================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 thumbnails in a row */
+  gap: 25px; /* spacing between thumbnails */
+  max-width: 1000px; /* prevent stretching */
+  margin: 0 auto;
+}
+
+/* Individual items */
+.gallery-grid .gallery-item img {
+  width: 100%;
+  height: 220px; /* slightly bigger */
+  object-fit: cover; /* maintain proportions without stretching */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid .gallery-item figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8b4513;
+  text-align: center;
+}
+
+/* Hover effect */
+.gallery-grid .gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* ======================
+   Mobile Responsiveness
+====================== */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    gap: 15px;
+  }
+  .gallery-grid .gallery-item img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+    gap: 15px;
+  }
+  .gallery-grid .gallery-item img {
+    height: 160px;
+  }
+}
