@@ -16,14 +16,17 @@ body {
   background-color: rgba(200,120,50,0.15);
 }
 
+/* Main header logo and title tweaks */
 .header-left .logo {
-  height: 160px;
+  height: 340px;   /* doubled from 170px */
   width: auto;
 }
 
-.header-center {
-  flex: 1;
-  text-align: center;
+.header-center h1 {
+  font-size: 56px; /* doubled from 28px */
+  font-family: 'Times New Roman', Georgia, serif; /* slightly more traditional */
+  font-weight: bold;
+  margin: 0;
 }
 
 .header-center h1 {
@@ -254,3 +257,4 @@ nav a {
     height: 160px;
   }
 }
+
