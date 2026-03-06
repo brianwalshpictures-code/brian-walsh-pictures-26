@@ -18,14 +18,14 @@ body {
 
 /* Main header logo and title tweaks */
 .header-left .logo {
-  height: 340px;   /* doubled from 170px */
+  height: 170px;   /* original size */
   width: auto;
 }
 
 .header-center h1 {
-  font-size: 56px; /* doubled from 28px */
-  font-family: 'Times New Roman', Georgia, serif; /* slightly more traditional */
-  font-weight: bold;
+  font-size: 28px; /* original size */
+  font-family: Georgia, serif; /* original font */
+  font-weight: normal; /* or keep bold if you prefer */
   margin: 0;
 }
 
@@ -257,4 +257,5 @@ nav a {
     height: 160px;
   }
 }
+
 
